@@ -89,5 +89,6 @@ server.prompt(
 
 // Start receiving messages on stdin and sending messages on stdout
 const transport = new StdioServerTransport();
-console.log("MCP Server started. Use MCP Inspector to connect.");
+// Write to stderr instead of stdout to avoid interfering with JSON messages
+console.error("MCP Server started. Use MCP Inspector to connect.");
 await server.connect(transport);
