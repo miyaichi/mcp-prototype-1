@@ -1,0 +1,9 @@
+# Build artifacts
+dist/
+node_modules/
+
+# Editor/IDE config
+.vscode/
+.idea/
+.DS_Store
+
